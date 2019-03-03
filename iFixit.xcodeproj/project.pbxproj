@@ -8,20 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		C34A999B22014F9500C36453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A999A22014F9500C36453 /* AppDelegate.swift */; };
-		C34A999D22014F9500C36453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A999C22014F9500C36453 /* ViewController.swift */; };
 		C34A99A022014F9500C36453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34A999E22014F9500C36453 /* Main.storyboard */; };
 		C34A99A222014F9600C36453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34A99A122014F9600C36453 /* Assets.xcassets */; };
 		C34A99A522014F9600C36453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34A99A322014F9600C36453 /* LaunchScreen.storyboard */; };
+		C34A99AD220152A600C36453 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A99AC220152A600C36453 /* LoginViewController.swift */; };
+		C34A99B322015D3500C36453 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A99B222015D3500C36453 /* APIManager.swift */; };
+		C36C096B222B1700002E92A3 /* GuideSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C096A222B1700002E92A3 /* GuideSummaryViewController.swift */; };
+		C36C096F222B1782002E92A3 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C096E222B1782002E92A3 /* GuidePageViewController.swift */; };
+		C36C0972222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0971222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift */; };
+		C36C0974222B1C88002E92A3 /* GuideSummaryTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0973222B1C88002E92A3 /* GuideSummaryTitleTableViewCell.swift */; };
+		C36C0977222B2878002E92A3 /* GuideStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0976222B2878002E92A3 /* GuideStepViewController.swift */; };
+		C36C097B222B37A1002E92A3 /* GuideStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C097A222B37A1002E92A3 /* GuideStepTableViewCell.swift */; };
+		C36C097D222B4F34002E92A3 /* GuideStepHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C097C222B4F34002E92A3 /* GuideStepHeaderTableViewCell.swift */; };
+		C36C097F222B513A002E92A3 /* GuideMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C097E222B513A002E92A3 /* GuideMediaCollectionViewCell.swift */; };
+		C36C0981222B5620002E92A3 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0980222B5620002E92A3 /* GuideViewController.swift */; };
+		C36C0983222B7CE5002E92A3 /* GuideInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0982222B7CE5002E92A3 /* GuideInfoTableViewCell.swift */; };
+		C36C0985222B8A99002E92A3 /* NewGuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0984222B8A99002E92A3 /* NewGuideCollectionViewCell.swift */; };
+		C36C0987222B8DF3002E92A3 /* GuideEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0986222B8DF3002E92A3 /* GuideEditViewController.swift */; };
+		C3BDA334220E3BFF00A64155 /* GuideSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BDA333220E3BFF00A64155 /* GuideSnippet.swift */; };
+		C3BDA33A220E437D00A64155 /* GuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BDA339220E437D00A64155 /* GuidesViewController.swift */; };
+		C3BDA33C220E448300A64155 /* GuidesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BDA33B220E448300A64155 /* GuidesCollectionViewCell.swift */; };
+		C3F94A392212099B00D88227 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F94A382212099B00D88227 /* Guide.swift */; };
+		C3FB684C220DFE8A00771FFC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB684B220DFE8A00771FFC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C34A999722014F9500C36453 /* iFixit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFixit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34A999A22014F9500C36453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C34A999C22014F9500C36453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C34A999F22014F9500C36453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C34A99A122014F9600C36453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34A99A422014F9600C36453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34A99A622014F9600C36453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34A99AC220152A600C36453 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C34A99B222015D3500C36453 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C36C096A222B1700002E92A3 /* GuideSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSummaryViewController.swift; sourceTree = "<group>"; };
+		C36C096E222B1782002E92A3 /* GuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePageViewController.swift; sourceTree = "<group>"; };
+		C36C0971222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSummaryImageTableViewCell.swift; sourceTree = "<group>"; };
+		C36C0973222B1C88002E92A3 /* GuideSummaryTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSummaryTitleTableViewCell.swift; sourceTree = "<group>"; };
+		C36C0976222B2878002E92A3 /* GuideStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideStepViewController.swift; sourceTree = "<group>"; };
+		C36C097A222B37A1002E92A3 /* GuideStepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideStepTableViewCell.swift; sourceTree = "<group>"; };
+		C36C097C222B4F34002E92A3 /* GuideStepHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideStepHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		C36C097E222B513A002E92A3 /* GuideMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideMediaCollectionViewCell.swift; sourceTree = "<group>"; };
+		C36C0980222B5620002E92A3 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		C36C0982222B7CE5002E92A3 /* GuideInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideInfoTableViewCell.swift; sourceTree = "<group>"; };
+		C36C0984222B8A99002E92A3 /* NewGuideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGuideCollectionViewCell.swift; sourceTree = "<group>"; };
+		C36C0986222B8DF3002E92A3 /* GuideEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditViewController.swift; sourceTree = "<group>"; };
+		C3BDA333220E3BFF00A64155 /* GuideSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSnippet.swift; sourceTree = "<group>"; };
+		C3BDA339220E437D00A64155 /* GuidesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesViewController.swift; sourceTree = "<group>"; };
+		C3BDA33B220E448300A64155 /* GuidesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3F94A382212099B00D88227 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
+		C3FB684B220DFE8A00771FFC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +71,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3164488221C79D20016E60D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C34A99A122014F9600C36453 /* Assets.xcassets */,
+				C34A99A322014F9600C36453 /* LaunchScreen.storyboard */,
+				C34A999E22014F9500C36453 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3164489221C79F60016E60D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C316448A221C7A070016E60D /* Guides */,
+				C36C0969222B149C002E92A3 /* Guide View */,
+				C316448C221C7A4A0016E60D /* Guide Edit */,
+				C316448B221C7A3B0016E60D /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C316448A221C7A070016E60D /* Guides */ = {
+			isa = PBXGroup;
+			children = (
+				C3BDA339220E437D00A64155 /* GuidesViewController.swift */,
+				C36C0984222B8A99002E92A3 /* NewGuideCollectionViewCell.swift */,
+				C3BDA33B220E448300A64155 /* GuidesCollectionViewCell.swift */,
+			);
+			path = Guides;
+			sourceTree = "<group>";
+		};
+		C316448B221C7A3B0016E60D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C34A99AC220152A600C36453 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C316448C221C7A4A0016E60D /* Guide Edit */ = {
+			isa = PBXGroup;
+			children = (
+				C36C0986222B8DF3002E92A3 /* GuideEditViewController.swift */,
+			);
+			path = "Guide Edit";
+			sourceTree = "<group>";
+		};
+		C316448E221C7A900016E60D /* API & Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C34A99B222015D3500C36453 /* APIManager.swift */,
+				C3F94A382212099B00D88227 /* Guide.swift */,
+				C3BDA333220E3BFF00A64155 /* GuideSnippet.swift */,
+				C3FB684B220DFE8A00771FFC /* User.swift */,
+			);
+			path = "API & Classes";
+			sourceTree = "<group>";
+		};
+		C3164490221C7BF30016E60D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C34A999A22014F9500C36453 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C34A998E22014F9500C36453 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +156,46 @@
 		C34A999922014F9500C36453 /* iFixit */ = {
 			isa = PBXGroup;
 			children = (
-				C34A999A22014F9500C36453 /* AppDelegate.swift */,
-				C34A999C22014F9500C36453 /* ViewController.swift */,
-				C34A999E22014F9500C36453 /* Main.storyboard */,
-				C34A99A122014F9600C36453 /* Assets.xcassets */,
-				C34A99A322014F9600C36453 /* LaunchScreen.storyboard */,
 				C34A99A622014F9600C36453 /* Info.plist */,
+				C3164490221C7BF30016E60D /* Supporting Files */,
+				C316448E221C7A900016E60D /* API & Classes */,
+				C3164489221C79F60016E60D /* Controllers */,
+				C3164488221C79D20016E60D /* Views */,
 			);
 			path = iFixit;
+			sourceTree = "<group>";
+		};
+		C36C0969222B149C002E92A3 /* Guide View */ = {
+			isa = PBXGroup;
+			children = (
+				C36C0980222B5620002E92A3 /* GuideViewController.swift */,
+				C36C096E222B1782002E92A3 /* GuidePageViewController.swift */,
+				C36C0970222B1C2D002E92A3 /* Guide Summary */,
+				C36C0975222B2861002E92A3 /* Guide Step */,
+			);
+			path = "Guide View";
+			sourceTree = "<group>";
+		};
+		C36C0970222B1C2D002E92A3 /* Guide Summary */ = {
+			isa = PBXGroup;
+			children = (
+				C36C096A222B1700002E92A3 /* GuideSummaryViewController.swift */,
+				C36C0971222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift */,
+				C36C0973222B1C88002E92A3 /* GuideSummaryTitleTableViewCell.swift */,
+				C36C0982222B7CE5002E92A3 /* GuideInfoTableViewCell.swift */,
+			);
+			path = "Guide Summary";
+			sourceTree = "<group>";
+		};
+		C36C0975222B2861002E92A3 /* Guide Step */ = {
+			isa = PBXGroup;
+			children = (
+				C36C0976222B2878002E92A3 /* GuideStepViewController.swift */,
+				C36C097C222B4F34002E92A3 /* GuideStepHeaderTableViewCell.swift */,
+				C36C097E222B513A002E92A3 /* GuideMediaCollectionViewCell.swift */,
+				C36C097A222B37A1002E92A3 /* GuideStepTableViewCell.swift */,
+			);
+			path = "Guide Step";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +269,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C34A999D22014F9500C36453 /* ViewController.swift in Sources */,
+				C36C097B222B37A1002E92A3 /* GuideStepTableViewCell.swift in Sources */,
+				C36C0974222B1C88002E92A3 /* GuideSummaryTitleTableViewCell.swift in Sources */,
+				C34A99AD220152A600C36453 /* LoginViewController.swift in Sources */,
+				C34A99B322015D3500C36453 /* APIManager.swift in Sources */,
+				C36C096F222B1782002E92A3 /* GuidePageViewController.swift in Sources */,
+				C36C0972222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift in Sources */,
 				C34A999B22014F9500C36453 /* AppDelegate.swift in Sources */,
+				C36C0987222B8DF3002E92A3 /* GuideEditViewController.swift in Sources */,
+				C3BDA33C220E448300A64155 /* GuidesCollectionViewCell.swift in Sources */,
+				C36C097D222B4F34002E92A3 /* GuideStepHeaderTableViewCell.swift in Sources */,
+				C3BDA33A220E437D00A64155 /* GuidesViewController.swift in Sources */,
+				C36C0977222B2878002E92A3 /* GuideStepViewController.swift in Sources */,
+				C3BDA334220E3BFF00A64155 /* GuideSnippet.swift in Sources */,
+				C3F94A392212099B00D88227 /* Guide.swift in Sources */,
+				C36C0981222B5620002E92A3 /* GuideViewController.swift in Sources */,
+				C3FB684C220DFE8A00771FFC /* User.swift in Sources */,
+				C36C096B222B1700002E92A3 /* GuideSummaryViewController.swift in Sources */,
+				C36C0983222B7CE5002E92A3 /* GuideInfoTableViewCell.swift in Sources */,
+				C36C097F222B513A002E92A3 /* GuideMediaCollectionViewCell.swift in Sources */,
+				C36C0985222B8A99002E92A3 /* NewGuideCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6H3CKWM9C;
 				INFOPLIST_FILE = iFixit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6H3CKWM9C;
 				INFOPLIST_FILE = iFixit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
