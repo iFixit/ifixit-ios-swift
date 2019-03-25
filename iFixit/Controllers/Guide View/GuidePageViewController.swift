@@ -27,6 +27,10 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
         self.dataSource = self
         self.delegate = self
         
+        if let myView = view?.subviews.first as? UIScrollView {
+            myView.canCancelContentTouches = false
+        }
+        
         // After confirming the user has been retrieved, query the API to receive the relevant guide using guideSnippet's guideid
         if let user = user, let _ = guideSnippet {
             self.api = APIManager(user: user)
@@ -35,7 +39,9 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
+        guard let viewControllerIndex = pages.index(of: viewController) else {
+            return nil
+        }
         
         let previousIndex = viewControllerIndex - 1
         
@@ -55,24 +61,6 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
         return pages[previousIndex]
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
-    {
-        if (!completed)
-        {
-            return
-        }
-        //       self.parentController?.updateToolbar(currentIndex: pageViewController.viewControllers!.first!.view.tag)
-    }
-    
-    public func startGuide() {
-        print("Started guide")
-        guard let currentViewController = self.pages.first else { return }
-        
-        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
-        
-        setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
-    }
-    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = pages.index(of: viewController) else {
             return nil
@@ -80,11 +68,7 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
         
         let nextIndex = viewControllerIndex + 1
         
-        guard nextIndex < pages.count else {
-            return pages.first
-        }
-        
-        guard pages.count > nextIndex else {
+        guard pages.count > nextIndex, nextIndex < pages.count else {
             return nil
         }
         
@@ -96,13 +80,18 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
         return pages[nextIndex]
     }
     
-    private func getViewController(withIdentifier identifier: String) -> UIViewController
-    {
+    public func goToNextPage(){
+        guard let currentViewController = self.viewControllers?.first else { return }
+        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
+        
+        setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+    }
+    
+    private func getViewController(withIdentifier identifier: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
     }
     
-    private func getSummaryView() -> UIViewController
-    {
+    private func getSummaryView() -> UIViewController {
         let VC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "guideSummaryView") as! GuideSummaryViewController
         
         VC.guide = self.guide
@@ -110,8 +99,7 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
         return VC
     }
     
-    private func getGuideSteps() -> [UIViewController]
-    {
+    private func getGuideSteps() -> [UIViewController] {
         var stepVCs = [UIViewController]()
         
         for step in (guide?.steps)! {
@@ -123,7 +111,7 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
         return stepVCs
     }
     
-    private func setupGuide() {
+    public func setupGuide() {
         api!.getGuide(guideid: guideSnippet!.guideid, completion: { (guide: Guide) -> () in
             self.guide = guide
             
@@ -136,26 +124,8 @@ class GuidePageViewController: UIPageViewController, UIPageViewControllerDelegat
                 if let firstVC = self.pages.first {
                     self.setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
                 }
-                self.parentController!.notifyParent()
+                self.parentController!.childViewLoadedGuide(guide: guide)
             }
-        })
-    }
-}
-
-extension UIView {
-    
-    func fadeIn(_ duration: TimeInterval? = 0.2, onCompletion: (() -> Void)? = nil) {
-        self.alpha = 0
-        self.isHidden = false
-        UIView.animate(withDuration: duration!, animations: { self.alpha = 1 }, completion: { (value: Bool) in
-            if let complete = onCompletion { complete() }
-        })
-    }
-    
-    func fadeOut(_ duration: TimeInterval? = 0.2, onCompletion: (() -> Void)? = nil) {
-        UIView.animate(withDuration: duration!, animations: { self.alpha = 0 }, completion: { (value: Bool) in
-            self.isHidden = true
-            if let complete = onCompletion { complete() }
         })
     }
 }

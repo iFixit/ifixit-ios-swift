@@ -16,6 +16,8 @@ struct Guide: Codable {
     var image: Image?
     var introduction_raw: String?
     var modified_date: Int
+    var revisionid: Int
+    var `public`: Bool
     var steps: [GuideStep]
     var subject: String
     var summary: String
@@ -60,8 +62,41 @@ struct GuideStep: Codable {
     
     struct GuideLine: Codable {
         var bullet: String
-        var level: Int?
-        var lineid: Int?
+        var level: Int
         var text_raw: String
+        
+        init(bullet: String, level: Int, text_raw: String) {
+            self.bullet = bullet 
+            self.level = level
+            self.text_raw = text_raw
+        }
+    }
+    
+    init(guideid: Int, lines: [GuideLine], revisionid: Int, stepid: Int, title: String) {
+        self.guideid = guideid
+        self.lines = lines
+        self.revisionid = revisionid
+        self.stepid = stepid
+        self.title = title
+    }
+}
+
+struct RequestBody: Codable {
+    var lines: [StepLine]
+    
+    init(lines: [StepLine]) {
+        self.lines = lines
+    }
+}
+
+struct StepLine: Codable {
+    var bullet: String
+    var level: Int
+    var text: String
+    
+    init(bullet: String, level: Int, text: String) {
+        self.bullet = bullet
+        self.level = level
+        self.text = text
     }
 }

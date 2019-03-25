@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32EFB0A222C69E7002E1232 /* GuideEditSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EFB09222C69E7002E1232 /* GuideEditSummaryViewController.swift */; };
+		C32EFB0D222C6A47002E1232 /* GuideEditPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EFB0C222C6A47002E1232 /* GuideEditPageViewController.swift */; };
+		C32EFB0F222C7624002E1232 /* GuideEditStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EFB0E222C7624002E1232 /* GuideEditStepViewController.swift */; };
+		C32EFB11222C9111002E1232 /* GuideEditSummaryMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EFB10222C9111002E1232 /* GuideEditSummaryMediaTableViewCell.swift */; };
 		C34A999B22014F9500C36453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A999A22014F9500C36453 /* AppDelegate.swift */; };
 		C34A99A022014F9500C36453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34A999E22014F9500C36453 /* Main.storyboard */; };
 		C34A99A222014F9600C36453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34A99A122014F9600C36453 /* Assets.xcassets */; };
 		C34A99A522014F9600C36453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34A99A322014F9600C36453 /* LaunchScreen.storyboard */; };
 		C34A99AD220152A600C36453 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A99AC220152A600C36453 /* LoginViewController.swift */; };
 		C34A99B322015D3500C36453 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A99B222015D3500C36453 /* APIManager.swift */; };
+		C34E41BF223CC97C00CA9DFB /* MediaManagerImageUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E41BE223CC97C00CA9DFB /* MediaManagerImageUploadViewController.swift */; };
+		C359869C22304B3E00216218 /* MediaManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359869B22304B3E00216218 /* MediaManagerViewController.swift */; };
+		C359869F22304B6200216218 /* MediaManagerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359869E22304B6200216218 /* MediaManagerCollectionViewCell.swift */; };
+		C35986A52230531000216218 /* MediaManagerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35986A42230531000216218 /* MediaManagerCollectionViewController.swift */; };
+		C35986A72230540B00216218 /* MediaManagerDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35986A62230540B00216218 /* MediaManagerDefaultViewController.swift */; };
+		C35986A922305CD300216218 /* MediaManagerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35986A822305CD300216218 /* MediaManagerImage.swift */; };
+		C35986AB22308D5900216218 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35986AA22308D5900216218 /* Extensions.swift */; };
+		C35F423E2236DC0E009B4814 /* GuideStepEditHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F423D2236DC0E009B4814 /* GuideStepEditHeaderTableViewCell.swift */; };
+		C35F42422236E02D009B4814 /* GuideEditMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F42412236E02D009B4814 /* GuideEditMediaCollectionViewCell.swift */; };
+		C36194D1222EDB780022FE33 /* GuideEditSummaryInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36194D0222EDB780022FE33 /* GuideEditSummaryInfoTableViewCell.swift */; };
+		C3634F032240A17B00B828C5 /* GuideEditStepBulletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3634F022240A17B00B828C5 /* GuideEditStepBulletTableViewCell.swift */; };
+		C3634F052240A74400B828C5 /* GuideEditStepAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3634F042240A74400B828C5 /* GuideEditStepAddTableViewCell.swift */; };
+		C368B73E222C976200F30021 /* GuideEditSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368B73D222C976200F30021 /* GuideEditSetupViewController.swift */; };
 		C36C096B222B1700002E92A3 /* GuideSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C096A222B1700002E92A3 /* GuideSummaryViewController.swift */; };
 		C36C096F222B1782002E92A3 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C096E222B1782002E92A3 /* GuidePageViewController.swift */; };
 		C36C0972222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0971222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift */; };
@@ -23,7 +40,6 @@
 		C36C097F222B513A002E92A3 /* GuideMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C097E222B513A002E92A3 /* GuideMediaCollectionViewCell.swift */; };
 		C36C0981222B5620002E92A3 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0980222B5620002E92A3 /* GuideViewController.swift */; };
 		C36C0983222B7CE5002E92A3 /* GuideInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0982222B7CE5002E92A3 /* GuideInfoTableViewCell.swift */; };
-		C36C0985222B8A99002E92A3 /* NewGuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0984222B8A99002E92A3 /* NewGuideCollectionViewCell.swift */; };
 		C36C0987222B8DF3002E92A3 /* GuideEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C0986222B8DF3002E92A3 /* GuideEditViewController.swift */; };
 		C3BDA334220E3BFF00A64155 /* GuideSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BDA333220E3BFF00A64155 /* GuideSnippet.swift */; };
 		C3BDA33A220E437D00A64155 /* GuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BDA339220E437D00A64155 /* GuidesViewController.swift */; };
@@ -33,6 +49,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C32EFB09222C69E7002E1232 /* GuideEditSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditSummaryViewController.swift; sourceTree = "<group>"; };
+		C32EFB0C222C6A47002E1232 /* GuideEditPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditPageViewController.swift; sourceTree = "<group>"; };
+		C32EFB0E222C7624002E1232 /* GuideEditStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditStepViewController.swift; sourceTree = "<group>"; };
+		C32EFB10222C9111002E1232 /* GuideEditSummaryMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditSummaryMediaTableViewCell.swift; sourceTree = "<group>"; };
 		C34A999722014F9500C36453 /* iFixit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFixit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34A999A22014F9500C36453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C34A999F22014F9500C36453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +61,19 @@
 		C34A99A622014F9600C36453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C34A99AC220152A600C36453 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C34A99B222015D3500C36453 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C34E41BE223CC97C00CA9DFB /* MediaManagerImageUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManagerImageUploadViewController.swift; sourceTree = "<group>"; };
+		C359869B22304B3E00216218 /* MediaManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManagerViewController.swift; sourceTree = "<group>"; };
+		C359869E22304B6200216218 /* MediaManagerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManagerCollectionViewCell.swift; sourceTree = "<group>"; };
+		C35986A42230531000216218 /* MediaManagerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManagerCollectionViewController.swift; sourceTree = "<group>"; };
+		C35986A62230540B00216218 /* MediaManagerDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManagerDefaultViewController.swift; sourceTree = "<group>"; };
+		C35986A822305CD300216218 /* MediaManagerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManagerImage.swift; sourceTree = "<group>"; };
+		C35986AA22308D5900216218 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C35F423D2236DC0E009B4814 /* GuideStepEditHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideStepEditHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		C35F42412236E02D009B4814 /* GuideEditMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditMediaCollectionViewCell.swift; sourceTree = "<group>"; };
+		C36194D0222EDB780022FE33 /* GuideEditSummaryInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditSummaryInfoTableViewCell.swift; sourceTree = "<group>"; };
+		C3634F022240A17B00B828C5 /* GuideEditStepBulletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditStepBulletTableViewCell.swift; sourceTree = "<group>"; };
+		C3634F042240A74400B828C5 /* GuideEditStepAddTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditStepAddTableViewCell.swift; sourceTree = "<group>"; };
+		C368B73D222C976200F30021 /* GuideEditSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditSetupViewController.swift; sourceTree = "<group>"; };
 		C36C096A222B1700002E92A3 /* GuideSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSummaryViewController.swift; sourceTree = "<group>"; };
 		C36C096E222B1782002E92A3 /* GuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePageViewController.swift; sourceTree = "<group>"; };
 		C36C0971222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSummaryImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -51,7 +84,6 @@
 		C36C097E222B513A002E92A3 /* GuideMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideMediaCollectionViewCell.swift; sourceTree = "<group>"; };
 		C36C0980222B5620002E92A3 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		C36C0982222B7CE5002E92A3 /* GuideInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideInfoTableViewCell.swift; sourceTree = "<group>"; };
-		C36C0984222B8A99002E92A3 /* NewGuideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGuideCollectionViewCell.swift; sourceTree = "<group>"; };
 		C36C0986222B8DF3002E92A3 /* GuideEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideEditViewController.swift; sourceTree = "<group>"; };
 		C3BDA333220E3BFF00A64155 /* GuideSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSnippet.swift; sourceTree = "<group>"; };
 		C3BDA339220E437D00A64155 /* GuidesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidesViewController.swift; sourceTree = "<group>"; };
@@ -84,22 +116,22 @@
 		C3164489221C79F60016E60D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C316448A221C7A070016E60D /* Guides */,
+				C316448A221C7A070016E60D /* Guides List */,
 				C36C0969222B149C002E92A3 /* Guide View */,
 				C316448C221C7A4A0016E60D /* Guide Edit */,
 				C316448B221C7A3B0016E60D /* Login */,
+				C359869D22304B4400216218 /* Media Manager */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		C316448A221C7A070016E60D /* Guides */ = {
+		C316448A221C7A070016E60D /* Guides List */ = {
 			isa = PBXGroup;
 			children = (
 				C3BDA339220E437D00A64155 /* GuidesViewController.swift */,
-				C36C0984222B8A99002E92A3 /* NewGuideCollectionViewCell.swift */,
 				C3BDA33B220E448300A64155 /* GuidesCollectionViewCell.swift */,
 			);
-			path = Guides;
+			path = "Guides List";
 			sourceTree = "<group>";
 		};
 		C316448B221C7A3B0016E60D /* Login */ = {
@@ -114,6 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				C36C0986222B8DF3002E92A3 /* GuideEditViewController.swift */,
+				C32EFB0C222C6A47002E1232 /* GuideEditPageViewController.swift */,
+				C368B73C222C974A00F30021 /* Setup */,
+				C32EFB0B222C69F6002E1232 /* Summary */,
+				C36194D2222EDCBA0022FE33 /* Step */,
 			);
 			path = "Guide Edit";
 			sourceTree = "<group>";
@@ -125,6 +161,8 @@
 				C3F94A382212099B00D88227 /* Guide.swift */,
 				C3BDA333220E3BFF00A64155 /* GuideSnippet.swift */,
 				C3FB684B220DFE8A00771FFC /* User.swift */,
+				C35986A822305CD300216218 /* MediaManagerImage.swift */,
+				C35986AA22308D5900216218 /* Extensions.swift */,
 			);
 			path = "API & Classes";
 			sourceTree = "<group>";
@@ -135,6 +173,16 @@
 				C34A999A22014F9500C36453 /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C32EFB0B222C69F6002E1232 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				C32EFB09222C69E7002E1232 /* GuideEditSummaryViewController.swift */,
+				C32EFB10222C9111002E1232 /* GuideEditSummaryMediaTableViewCell.swift */,
+				C36194D0222EDB780022FE33 /* GuideEditSummaryInfoTableViewCell.swift */,
+			);
+			path = Summary;
 			sourceTree = "<group>";
 		};
 		C34A998E22014F9500C36453 = {
@@ -165,18 +213,50 @@
 			path = iFixit;
 			sourceTree = "<group>";
 		};
+		C359869D22304B4400216218 /* Media Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C359869B22304B3E00216218 /* MediaManagerViewController.swift */,
+				C34E41BE223CC97C00CA9DFB /* MediaManagerImageUploadViewController.swift */,
+				C35986A42230531000216218 /* MediaManagerCollectionViewController.swift */,
+				C359869E22304B6200216218 /* MediaManagerCollectionViewCell.swift */,
+				C35986A62230540B00216218 /* MediaManagerDefaultViewController.swift */,
+			);
+			path = "Media Manager";
+			sourceTree = "<group>";
+		};
+		C36194D2222EDCBA0022FE33 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				C32EFB0E222C7624002E1232 /* GuideEditStepViewController.swift */,
+				C3634F042240A74400B828C5 /* GuideEditStepAddTableViewCell.swift */,
+				C35F423D2236DC0E009B4814 /* GuideStepEditHeaderTableViewCell.swift */,
+				C35F42412236E02D009B4814 /* GuideEditMediaCollectionViewCell.swift */,
+				C3634F022240A17B00B828C5 /* GuideEditStepBulletTableViewCell.swift */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+		C368B73C222C974A00F30021 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				C368B73D222C976200F30021 /* GuideEditSetupViewController.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
 		C36C0969222B149C002E92A3 /* Guide View */ = {
 			isa = PBXGroup;
 			children = (
 				C36C0980222B5620002E92A3 /* GuideViewController.swift */,
 				C36C096E222B1782002E92A3 /* GuidePageViewController.swift */,
-				C36C0970222B1C2D002E92A3 /* Guide Summary */,
-				C36C0975222B2861002E92A3 /* Guide Step */,
+				C36C0970222B1C2D002E92A3 /* Summary */,
+				C36C0975222B2861002E92A3 /* Step */,
 			);
 			path = "Guide View";
 			sourceTree = "<group>";
 		};
-		C36C0970222B1C2D002E92A3 /* Guide Summary */ = {
+		C36C0970222B1C2D002E92A3 /* Summary */ = {
 			isa = PBXGroup;
 			children = (
 				C36C096A222B1700002E92A3 /* GuideSummaryViewController.swift */,
@@ -184,10 +264,10 @@
 				C36C0973222B1C88002E92A3 /* GuideSummaryTitleTableViewCell.swift */,
 				C36C0982222B7CE5002E92A3 /* GuideInfoTableViewCell.swift */,
 			);
-			path = "Guide Summary";
+			path = Summary;
 			sourceTree = "<group>";
 		};
-		C36C0975222B2861002E92A3 /* Guide Step */ = {
+		C36C0975222B2861002E92A3 /* Step */ = {
 			isa = PBXGroup;
 			children = (
 				C36C0976222B2878002E92A3 /* GuideStepViewController.swift */,
@@ -195,7 +275,7 @@
 				C36C097E222B513A002E92A3 /* GuideMediaCollectionViewCell.swift */,
 				C36C097A222B37A1002E92A3 /* GuideStepTableViewCell.swift */,
 			);
-			path = "Guide Step";
+			path = Step;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,26 +349,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32EFB11222C9111002E1232 /* GuideEditSummaryMediaTableViewCell.swift in Sources */,
 				C36C097B222B37A1002E92A3 /* GuideStepTableViewCell.swift in Sources */,
 				C36C0974222B1C88002E92A3 /* GuideSummaryTitleTableViewCell.swift in Sources */,
+				C368B73E222C976200F30021 /* GuideEditSetupViewController.swift in Sources */,
 				C34A99AD220152A600C36453 /* LoginViewController.swift in Sources */,
+				C35986A922305CD300216218 /* MediaManagerImage.swift in Sources */,
+				C3634F052240A74400B828C5 /* GuideEditStepAddTableViewCell.swift in Sources */,
+				C35986A52230531000216218 /* MediaManagerCollectionViewController.swift in Sources */,
+				C35F423E2236DC0E009B4814 /* GuideStepEditHeaderTableViewCell.swift in Sources */,
 				C34A99B322015D3500C36453 /* APIManager.swift in Sources */,
+				C32EFB0F222C7624002E1232 /* GuideEditStepViewController.swift in Sources */,
+				C34E41BF223CC97C00CA9DFB /* MediaManagerImageUploadViewController.swift in Sources */,
 				C36C096F222B1782002E92A3 /* GuidePageViewController.swift in Sources */,
+				C35986A72230540B00216218 /* MediaManagerDefaultViewController.swift in Sources */,
+				C359869C22304B3E00216218 /* MediaManagerViewController.swift in Sources */,
 				C36C0972222B1C55002E92A3 /* GuideSummaryImageTableViewCell.swift in Sources */,
 				C34A999B22014F9500C36453 /* AppDelegate.swift in Sources */,
 				C36C0987222B8DF3002E92A3 /* GuideEditViewController.swift in Sources */,
+				C36194D1222EDB780022FE33 /* GuideEditSummaryInfoTableViewCell.swift in Sources */,
 				C3BDA33C220E448300A64155 /* GuidesCollectionViewCell.swift in Sources */,
 				C36C097D222B4F34002E92A3 /* GuideStepHeaderTableViewCell.swift in Sources */,
+				C32EFB0A222C69E7002E1232 /* GuideEditSummaryViewController.swift in Sources */,
 				C3BDA33A220E437D00A64155 /* GuidesViewController.swift in Sources */,
+				C359869F22304B6200216218 /* MediaManagerCollectionViewCell.swift in Sources */,
 				C36C0977222B2878002E92A3 /* GuideStepViewController.swift in Sources */,
 				C3BDA334220E3BFF00A64155 /* GuideSnippet.swift in Sources */,
+				C32EFB0D222C6A47002E1232 /* GuideEditPageViewController.swift in Sources */,
 				C3F94A392212099B00D88227 /* Guide.swift in Sources */,
 				C36C0981222B5620002E92A3 /* GuideViewController.swift in Sources */,
 				C3FB684C220DFE8A00771FFC /* User.swift in Sources */,
+				C35986AB22308D5900216218 /* Extensions.swift in Sources */,
+				C35F42422236E02D009B4814 /* GuideEditMediaCollectionViewCell.swift in Sources */,
 				C36C096B222B1700002E92A3 /* GuideSummaryViewController.swift in Sources */,
 				C36C0983222B7CE5002E92A3 /* GuideInfoTableViewCell.swift in Sources */,
 				C36C097F222B513A002E92A3 /* GuideMediaCollectionViewCell.swift in Sources */,
-				C36C0985222B8A99002E92A3 /* NewGuideCollectionViewCell.swift in Sources */,
+				C3634F032240A17B00B828C5 /* GuideEditStepBulletTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

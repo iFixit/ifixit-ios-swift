@@ -21,6 +21,12 @@ class GuideSummaryViewController: UIViewController {
             print("No Guide Loaded")
         }
     }
+    
+    @IBAction func beginGuideButtonPressed(_ sender: UIButton) {
+        let parentVC = self.parent as! GuidePageViewController
+        
+        parentVC.goToNextPage()
+    }
 }
 
 extension GuideSummaryViewController: UITableViewDelegate, UITableViewDataSource {
@@ -29,7 +35,15 @@ extension GuideSummaryViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 && guide?.image == nil {
+            return 0
+        }
+        
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return false
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

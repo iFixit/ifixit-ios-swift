@@ -59,7 +59,7 @@ extension GuideStepHeaderTableViewCell: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "guideMediaCell", for: indexPath) as! GuideMediaCollectionViewCell
         
-        cell.mediaImage.downloaded(from: self.imageArray[indexPath.row].standard ?? "")
+        cell.mediaImage.downloaded(from: self.imageArray[indexPath.row].original ?? "")
         cell.imageData = self.imageArray[indexPath.row]
         
         let pictureTap = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(_:)))
